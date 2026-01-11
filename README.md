@@ -7,42 +7,37 @@ This repository offers a comprehensive introduction to Transformer models, with 
 This repository contains 3 different Transformer projects:
 
 #### 1. Action Recognition
-- **Notebook**: `Action_Recognition/Action_Recognition.ipynb`
-- **Content**: Human action recognition from video or text descriptions
-- **Objective**: Classify different types of human actions using Transformers
+
+- **Notebook**: `Action_Recognition/CNN_Transformer_Action_Recognition.ipynb`
+- **Content**: Human action recognition from video 
+- **Objective**: This notebook demonstrates a CNN–Transformer architecture for video-based action recognition using PyTorch. The CNN extracts spatial features from video frames, while the Transformer models temporal dependencies across frames.
 - **Status**: Ready for training
 
-#### 2. Reddit Breakup Stories
-- **Notebook**: `Reddit_Breakup_stories/Reddit_Breakup_Stories.ipynb`
-- **Content**: Text analysis and sentiment classification of breakup stories
-- **Objective**: Analyze emotional content and classify relationship situations
+#### 2. Pokemon Identification
+
+- **Notebook**: `Pokemon_Identification/Pokémon Identification using Vision Transformers.ipynb`
+- **Content**: Image classification (Pokémon identification)
+- **Objective**: This notebook demonstrates the effectiveness of a Vision Transformer (ViT) for Pokémon image identification. The training loss curve shows stable convergence, while the validation accuracy curve confirms robust model performance across epochs. The class distribution visualization ensures a balanced dataset, and sample predictions illustrate accurate model classification.
 - **Status**: Ready for analysis
 
-#### 3. YouTube Videos
-- **Notebook**: `YouTube_Videos/YouTube_Videos.ipynb`
-- **Content**: Video content analysis and classification
-- **Objective**: Classify YouTube videos based on content and metadata
+#### 3. Video Classification
+
+- **Notebook**: `Video_Classification/Video_Classification.ipynb`
+- **Content**: Video content on Nature and Sport
+- **Objective**: The implementation leverages the Hugging Face Transformers library, providing a production-ready pipeline that encompasses video preprocessing, frame sampling, model training, and comprehensive performance evaluation. Through detailed visualizations and metrics analysis, this project not only showcases the technical implementation of VideoMAE but also provides insights into model behavior, classification accuracy, and practical considerations for deploying video understanding systems in real-world applications such as content recommendation, automated video tagging, and multimedia analytics.
 - **Status**: Ready for analysis
 
 ## Getting Started
 
 1. Clone this repository
-2. Install required Python packages for Transformers:
-   ```bash
-   pip install transformers torch tensorflow pandas numpy matplotlib seaborn jupyter datasets tokenizers
-   ```
+2. Install required Python packages for Transformers (note: where applicable, the notebook has requirements.txt file):
+    
+    ```shell
+    pip install transformers torch tensorflow pandas numpy matplotlib seaborn jupyter datasets tokenizers
+    ```
+    
 3. Choose a project folder and open the corresponding Jupyter notebook
 4. Follow the training process and experiment with different architectures
-
-## Transformer Concepts Covered
-
-- **Self-Attention Mechanism**: Core of Transformer architecture
-- **Multi-Head Attention**: Parallel attention computations
-- **Positional Encoding**: Handling sequence order
-- **Encoder-Decoder Architecture**: Bidirectional processing
-- **Fine-tuning**: Adapting pre-trained models
-- **Tokenization**: Text preprocessing for Transformers
-- **BERT, GPT, T5**: Popular Transformer variants
 
 ## Requirements
 
@@ -56,12 +51,12 @@ This repository contains 3 different Transformer projects:
 ```
 Transformers/
 ├── README.md
-├── Action Recognition/
-│   └── Action Recognition.ipynb
-├── Reddit Breakup stories/
-│   └── Reddit Breakup Stories.ipynb
-└── YouTube Videos/
-    └── YouTube Videos.ipynb
+├── Action_Recognition/
+│   └── CNN_Transformer_Action_Recognition.ipynb
+├── Pokemon Identification/
+│   └── Pokémon Identification using Vision Transformers.ipynb
+└── Video Classification/
+    └── Video_Classification.ipynb
 ```
 
 ## Tips for Success

@@ -1,0 +1,15 @@
+torch
+torchvision
+transformers
+numpy
+scikit-learn
+imageio[ffmpeg]
+requests
+torch
+torchvision
+transformers
+scikit-learn
+opencv-python
+seaborn
+matplotlib
+ipywidgets
